@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.container {
+  width: 1100px;
+
+  margin: 0 auto;
+}
+/* ============common css end================ */
+
+/* =============navbar part start================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.menu {
+  display: flex;
+  gap: 55px;
+}
+.menu li a {
+  text-transform: capitalize;
+  color: #000000;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  color: #00cd3e;
+  position: relative;
+}
+.menu li a::before {
+  content: "";
+  top: -4px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #00cd3e;
+  position: absolute;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+.menu li a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+.logo {
+  height: 70px;
+}
+.li_one {
+  position: relative;
+  overflow: hidden;
+}
+.ul_one li a {
+}
+.ul_one li a {
+  width: 220px;
+  padding: 10px;
+  border-bottom: 1px solid #00cd3e;
+}
+.ul_one li a:hover {
+  background-color: #00cd3e;
+  color: #ffffff;
+}
+
+.ul_one {
+  position: absolute;
+  top: 70px;
+  left: -40px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  text-align: center;
+  opacity: 1;
+  transition: all linear 0.2s;
+  border: 1px solid #00cd3e;
+  border-radius: 4px;
+}
+.li_one:hover .ul_one {
+  opacity: 1;
+  top: 29px;
+  z-index: 2;
+}
+.ul_one li a::before {
+}
+.ul_one li a:hover::before {
+  opacity: 0;
+}
+.li_one:hover {
+  overflow: visible;
+}
+
+/* =============navbar part end================== */
+
+/* =============image part start================== */
+
+.bannar_img {
+  width: 100%;
+  height: 100vh;
+  background: url(images/ban_img_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.bannar_img h2 .one {
+  color: #ffffff;
+  font-size: 80px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.bannar_img h2 span:nth-child(1) {
+  color: #3097fd;
+  font-family: "Lato", sans-serif;
+}
+.bannar_img h2 span:nth-child(2) {
+  color: #f90101;
+  font-family: "Lato", sans-serif;
+}
+.bannar_img h2 span:nth-child(3) {
+  color: #15cf31;
+  font-family: "Lato", sans-serif;
+}
+.bannar_img h2 span:nth-child(4) {
+  color: #f2b50f;
+  font-family: "Lato", sans-serif;
+}
+.bannar_img h3 {
+  color: #ef0c81;
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+.bannar_img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.201);
+  position: absolute;
+  z-index: -1;
+}
+
+/* =============image part end==================== */
+/* ==============Button part start==================== */
+.button button {
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #00cd3e;
+  background: #00cd3e;
+  color: #ffffff;
+  transition: all linear 0.2s;
+}
+.button button:hover {
+  background: transparent;
+  color: #03c23d;
+}
+
+/* ==============Button part end====================== */
